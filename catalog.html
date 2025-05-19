@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            background-color: #212529;
+            color: white;
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+
+        .sidebar .nav-link {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .sidebar .nav-link.active {
+            color: #0d6efd;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar .logo {
+            padding: 0 15px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .user-profile {
+            margin-top: auto;
+            padding: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .product-card {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Боковая панель -->
+            <div class="col-md-3 col-lg-2 sidebar d-flex flex-column vh-100">
+                <!-- Логотип -->
+                <div class="logo d-flex align-items-center p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-grid-fill me-2" viewBox="0 0 16 16">
+                        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5z"/>
+                    </svg>
+                    <span class="fs-5">Меню</span>
+                </div>
+
+                <!-- Навигация -->
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="Glavnaya.html">
+                          <i class="bi bi-house-door me-2"></i>Главная
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="category.html">
+                          <i class="bi bi-grid me-2"></i>Категории
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link text-white" href="catalog.html">
+                          <i class="bi bi-bag-check me-2"></i>Заказы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">
+                            <i class="bi bi-person-lines-fill me-2"></i>Контакты
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Блок пользователя (внутри боковой панели) -->
+                <div class="user-profile mt-auto p-3">
+                    <div class="mb-2">
+                        <a href="#" class="text-decoration-none text-light">Профиль</a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="#" class="text-decoration-none text-danger">Выход</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-secondary me-2" style="width: 30px; height: 30px;"></div>
+                        <span>Пользователь</span>
+                    </div>
+                </div>
+            </div>
+
+<!-- Основной контент -->
+            <div class="col-md-10 col-lg-8 main-content">
+                <h1 class="mb-3 text-center">Каталог</h1>
+                <!-- Сетка для карточек товаров -->
+               <div class="row">
+
+                   <!-- Колонка для первой карточки -->
+                   <div class="col-sm-6 col-md-6 mb-4">
+                      <div class="product-card border rounded">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 150px;">
+                                Контент №1
+                        </div>
+                            <!-- Текстовое содержимое карточки -->
+                            <div class="p-3">
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                      </div>
+                   </div>
+
+                   <!-- Колонка для второй карточки -->
+                   <div class="col-sm-6 col-md-6 mb-4">
+                      <div class="product-card border rounded">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 150px;">
+                                Контент №2
+                        </div>
+                            <div class="p-3">
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                   <!-- Колонка для третьей карточки -->
+                   <div class="col-sm-6 col-md-6 mb-4">
+                      <div class="product-card border rounded">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 150px;">
+                                Контент №3
+                        </div>
+                            <div class="p-3">
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                   <!-- Колонка для четвертой карточки -->
+                   <div class="col-sm-6 col-md-6 mb-4">
+                      <div class="product-card border rounded">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 150px;">
+                                Контент №4
+                        </div>
+                            <div class="p-3">
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+
+
+               </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
